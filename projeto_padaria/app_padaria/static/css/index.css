@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(255, 166, 0);
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+#dov {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}

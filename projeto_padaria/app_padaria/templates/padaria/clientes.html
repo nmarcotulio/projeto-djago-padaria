@@ -1,5 +1,8 @@
+{% extends 'padaria/base.html' %}
+{% block conteudo %}
 <div class="container">
-    <table>
+    <h1>Clientes Cadastrados:</h1>
+    <table class="table table-bordered table-striped">
         <tr>
             <th>id</th>
             <th>nome</th>
@@ -7,10 +10,11 @@
         </tr>
         {% for client in clientes %}
         <tr>
-            <td>{{client.}}</td>
+            <td>{{client.id_cliente}}</td>
             <td>{{client.nome}}</td>
             <td>{{client.telefone}}</td>
         </tr>
         {% endfor %}
     </table>
 </div>
+{% endblock %}
